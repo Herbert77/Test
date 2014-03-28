@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property UITabBarController *tabBarController;
+
 @end
