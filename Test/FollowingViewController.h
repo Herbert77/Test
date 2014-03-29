@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FollowingViewController : UIViewController
+@interface FollowingViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+
+
+@property IBOutlet UITableView *tableView;
+
 
 @end

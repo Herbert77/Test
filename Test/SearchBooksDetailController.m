@@ -40,25 +40,6 @@
 }
 
 
-
-//-(id) init {
-//    
-//    self = [super init];
-//    
-//    if (self) {
-//        
-//        _cancel = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel:)];
-//        
-//        NSLog(@" _cancel ----------");
-//        
-//        _sure = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(sure:)];
-//        
-//    }
-//    
-//    return self;
-//    
-//}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];

@@ -22,20 +22,7 @@
 -(id) initForNewBook:(BOOL) isNew {
     
     self = [super initWithNibName:@"SearchBooksViewController" bundle:nil];
-    
-//    if (self) {
-//        if (isNew) {
-//            UIBarButtonItem *addItem = [[UIBarButtonItem alloc]
-//                                         initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(add:)];
-//            [[self navigationItem] setRightBarButtonItem:addItem];
-//            
-//            UIBarButtonItem *cancelItem = [[UIBarButtonItem alloc]
-//                                           initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel:)];
-//            
-//            [[self navigationItem] setLeftBarButtonItem:cancelItem];
-//        }
-//    }
-    
+
     return self;
 }
 

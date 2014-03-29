@@ -11,9 +11,11 @@
 @interface SearchBooksViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate>
 {
     
-    NSArray *namesOfBooks;
-    NSArray *namesOfImages;
+    NSArray *namesOfBooks;  // title
+    NSArray *publisher;     // writer
+    NSArray *namesOfImages; // nameOfCover
     NSArray *introduction;
+    NSArray *ISBN;           // ISBN
     
     NSArray *searchResults;
 }

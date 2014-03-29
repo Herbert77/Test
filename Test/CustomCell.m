@@ -8,6 +8,7 @@
 
 #import "CustomCell.h"
 
+
 @implementation CustomCell
 @synthesize label_1 = _label_1;
 @synthesize label_2 = _label_2;
@@ -28,5 +29,7 @@
 
     // Configure the view for the selected state
 }
+
+
 
 @end

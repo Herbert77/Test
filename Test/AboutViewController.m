@@ -106,7 +106,7 @@
             if (indexPath.row == 0) {
                 cell.textLabel.text = @"开发团队";
             } else {
-                cell.textLabel.text = @"检查新版本";
+                cell.textLabel.text = @"意见反馈";
             }
             break;
         default:

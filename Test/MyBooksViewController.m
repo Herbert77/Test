@@ -14,6 +14,8 @@
 #import "Book+TableRepresentation.h"
 #import "PersistencyManager.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 @interface MyBooksViewController () {
     
     NSArray *allBooks;
@@ -41,7 +43,7 @@
         // 设置这个 栏目按键于导航栏的右方
         [[self navigationItem] setRightBarButtonItem:addBookButtonItem];
         
-        [[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
+//        [[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
         
     }
     
@@ -59,6 +61,7 @@
     
     self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tableViewBackground"]];
     
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     //1
     currentBookIndex = 0;
@@ -102,13 +105,6 @@
 -(void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-//        PossessionStore *ps = [PossessionStore defaultStore];
-//        NSArray *possessions = [ps allPossessions];
-//        Possession *p = [possessions objectAtIndex:[indexPath row]];
-//        
-//        [ps removePossession:p];
-//        
-//        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil] withRowAnimation:YES];
         
         [[LibraryAPI sharedInstance] deleteBookAtIndex:(int)indexPath.row];
         
@@ -158,7 +154,14 @@
     cell.label_1.text = currentBookData[@"Title"];
     cell.label_2.text = currentBookData[@"Writer"];
     cell.imageView.image = [UIImage imageNamed: currentBookData[@"NameOfCover"]];
+    
+    cell.imageView.layer.cornerRadius = 5.0;
+    cell.imageView.layer.masksToBounds = YES;
+    
+    UIImageView *bgImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"backgroundImage.png"]];
 
+    cell.backgroundView = bgImageView;
+    
     return cell;
 }
 

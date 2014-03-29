@@ -19,8 +19,10 @@
                     <rect key="frame" x="30" y="0.0" width="261" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                    <color key="separatorColor" red="0.56059450290000001" green="0.78553000989999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                    <color key="separatorColor" red="0.44081317007860354" green="0.62050635341065208" blue="0.79083625637755106" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                    <color key="sectionIndexColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="NSX-Ht-mQ5"/>
                         <outlet property="delegate" destination="-1" id="7Lf-LE-vCo"/>

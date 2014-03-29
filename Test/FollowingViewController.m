@@ -7,8 +7,14 @@
 //
 
 #import "FollowingViewController.h"
+#import "UserCell.h"
 
-@interface FollowingViewController ()
+@interface FollowingViewController () {
+    
+    NSMutableArray *nameOfUsers;
+    NSMutableArray *latestNews;
+    
+}
 
 @end
 
@@ -26,13 +32,64 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    nameOfUsers = [[NSMutableArray alloc] initWithObjects:@"夏末的雨",@"再见 明天",@"桃花石上书生",@"山吹茶", nil];
+    latestNews = [[NSMutableArray alloc] initWithObjects:@"发表了一条新笔记",@"最近添加了《资治通鉴》",@"赞了《纸牌屋》", @"发表了最新评论", nil];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - 
+#pragma mark UITableView dataSource
+
+-(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
+
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 4;
+}
+
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    static NSString *identifier = @"UserCell";
+    
+    UserCell *cell = (UserCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    if (!cell) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"UserCell" owner:self options:nil];
+        
+        cell = [nib objectAtIndex:0];
+    }
+    
+    // 圆角矩形  效果
+    [cell.imageView.layer setCornerRadius:CGRectGetHeight([cell.imageView bounds]) / 2];
+    cell.imageView.layer.masksToBounds = YES;
+    
+    cell.imageView.layer.borderWidth = 1.8;
+    cell.imageView.layer.borderColor = [[UIColor colorWithRed:95/255.0 green:194/255.0 blue:158/255.0 alpha:0.4] CGColor];
+    
+    UIImageView *bgImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"user_backgroundImage_2.png"]];
+
+    cell.backgroundView = bgImageView;
+    
+    // 内容
+    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"user_%i.png", (int)indexPath.row + 1]];
+   
+    cell.name.text = [nameOfUsers objectAtIndex:indexPath.row];
+    
+    cell.latestNews.text = [latestNews objectAtIndex:indexPath.row];
+    
+    
+    return cell;
+    
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
+}
+
 
 @end

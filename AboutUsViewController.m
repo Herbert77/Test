@@ -31,11 +31,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    _imageView.image = [UIImage imageNamed:@"team_introduction_image.png"];
 }
 
 -(IBAction)backButtonPressed:(id)sender {
     
-    [self dismissViewControllerAnimated:self completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

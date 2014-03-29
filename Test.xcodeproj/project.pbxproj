@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E50405A218E6D42A00AE1844 /* UserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E50405A018E6D42A00AE1844 /* UserCell.m */; };
+		E50405A318E6D42A00AE1844 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E50405A118E6D42A00AE1844 /* UserCell.xib */; };
+		E50405AD18E6E80100AE1844 /* user_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E50405A918E6E80100AE1844 /* user_1.png */; };
+		E50405AE18E6E80100AE1844 /* user_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E50405AA18E6E80100AE1844 /* user_2.png */; };
+		E50405AF18E6E80100AE1844 /* user_4.png in Resources */ = {isa = PBXBuildFile; fileRef = E50405AB18E6E80100AE1844 /* user_4.png */; };
+		E50405B018E6E80100AE1844 /* user_3.png in Resources */ = {isa = PBXBuildFile; fileRef = E50405AC18E6E80100AE1844 /* user_3.png */; };
+		E50405B618E6EDBF00AE1844 /* user_backgroundImage_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E50405B518E6EDBF00AE1844 /* user_backgroundImage_2.png */; };
+		E50405B818E6EDD300AE1844 /* User_backgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E50405B718E6EDD300AE1844 /* User_backgroundImage.png */; };
 		E510A53A18C2EC7600116005 /* SearchBooksDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = E510A53818C2EC7600116005 /* SearchBooksDetailController.m */; };
 		E510A53B18C2EC7600116005 /* SearchBooksDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E510A53918C2EC7600116005 /* SearchBooksDetailController.xib */; };
 		E51C7EE518E2732B00CB6C38 /* LibraryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = E51C7EE418E2732B00CB6C38 /* LibraryAPI.m */; };
@@ -29,8 +37,11 @@
 		E52A215C18BB8E4D00DC6697 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E52A215B18BB8E4D00DC6697 /* CustomCell.xib */; };
 		E539286618E1B59700354171 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = E539286518E1B59700354171 /* Book.m */; };
 		E539286C18E1B84200354171 /* Book+TableRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = E539286B18E1B84200354171 /* Book+TableRepresentation.m */; };
+		E556D6D318E66AC500DCCA62 /* backgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E556D6D218E66AC500DCCA62 /* backgroundImage.png */; };
+		E556D6D518E66D5B00DCCA62 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E556D6D418E66D5B00DCCA62 /* QuartzCore.framework */; };
 		E5715E7518D5EEA400392AF8 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5715E7318D5EEA400392AF8 /* AboutUsViewController.m */; };
 		E5715E7618D5EEA400392AF8 /* AboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5715E7418D5EEA400392AF8 /* AboutUsViewController.xib */; };
+		E58FC43518E6C12F002AF0E8 /* team_introduction_image.png in Resources */ = {isa = PBXBuildFile; fileRef = E58FC43418E6C12F002AF0E8 /* team_introduction_image.png */; };
 		E5A84C1B18BCDE43000B5169 /* backgroundView.png in Resources */ = {isa = PBXBuildFile; fileRef = E5A84C1A18BCDE43000B5169 /* backgroundView.png */; };
 		E5A84C1D18BCDE99000B5169 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E5A84C1C18BCDE99000B5169 /* 1.png */; };
 		E5B9DDD018E53D0700C3C34C /* s27232389.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5B9DDCB18E53D0700C3C34C /* s27232389.jpg */; };
@@ -61,6 +72,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E504059F18E6D42A00AE1844 /* UserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCell.h; sourceTree = "<group>"; };
+		E50405A018E6D42A00AE1844 /* UserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCell.m; sourceTree = "<group>"; };
+		E50405A118E6D42A00AE1844 /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		E50405A918E6E80100AE1844 /* user_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_1.png; sourceTree = "<group>"; };
+		E50405AA18E6E80100AE1844 /* user_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_2.png; sourceTree = "<group>"; };
+		E50405AB18E6E80100AE1844 /* user_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_4.png; sourceTree = "<group>"; };
+		E50405AC18E6E80100AE1844 /* user_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_3.png; sourceTree = "<group>"; };
+		E50405B518E6EDBF00AE1844 /* user_backgroundImage_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_backgroundImage_2.png; sourceTree = "<group>"; };
+		E50405B718E6EDD300AE1844 /* User_backgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = User_backgroundImage.png; sourceTree = "<group>"; };
 		E510A53718C2EC7600116005 /* SearchBooksDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchBooksDetailController.h; path = Test/SearchBooksDetailController.h; sourceTree = "<group>"; };
 		E510A53818C2EC7600116005 /* SearchBooksDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchBooksDetailController.m; path = Test/SearchBooksDetailController.m; sourceTree = "<group>"; };
 		E510A53918C2EC7600116005 /* SearchBooksDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchBooksDetailController.xib; path = Test/SearchBooksDetailController.xib; sourceTree = "<group>"; };
@@ -94,9 +114,12 @@
 		E539286518E1B59700354171 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		E539286A18E1B84200354171 /* Book+TableRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Book+TableRepresentation.h"; sourceTree = "<group>"; };
 		E539286B18E1B84200354171 /* Book+TableRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Book+TableRepresentation.m"; sourceTree = "<group>"; };
+		E556D6D218E66AC500DCCA62 /* backgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundImage.png; sourceTree = "<group>"; };
+		E556D6D418E66D5B00DCCA62 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E5715E7218D5EEA400392AF8 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
 		E5715E7318D5EEA400392AF8 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
 		E5715E7418D5EEA400392AF8 /* AboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUsViewController.xib; sourceTree = "<group>"; };
+		E58FC43418E6C12F002AF0E8 /* team_introduction_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = team_introduction_image.png; sourceTree = "<group>"; };
 		E5A84C1A18BCDE43000B5169 /* backgroundView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundView.png; sourceTree = "<group>"; };
 		E5A84C1C18BCDE99000B5169 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		E5B9DDCB18E53D0700C3C34C /* s27232389.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s27232389.jpg; sourceTree = "<group>"; };
@@ -124,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E556D6D518E66D5B00DCCA62 /* QuartzCore.framework in Frameworks */,
 				E52A212718BB862600DC6697 /* CoreGraphics.framework in Frameworks */,
 				E52A212918BB862600DC6697 /* UIKit.framework in Frameworks */,
 				E52A212518BB862600DC6697 /* Foundation.framework in Frameworks */,
@@ -217,6 +241,7 @@
 		E52A212318BB862600DC6697 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E556D6D418E66D5B00DCCA62 /* QuartzCore.framework */,
 				E52A212418BB862600DC6697 /* Foundation.framework */,
 				E52A212618BB862600DC6697 /* CoreGraphics.framework */,
 				E52A212818BB862600DC6697 /* UIKit.framework */,
@@ -283,6 +308,9 @@
 				E5DCBCFE18BEDBA500B58936 /* FollowingViewController.h */,
 				E5DCBCFF18BEDBA500B58936 /* FollowingViewController.m */,
 				E5DCBD0018BEDBA500B58936 /* FollowingViewController.xib */,
+				E504059F18E6D42A00AE1844 /* UserCell.h */,
+				E50405A018E6D42A00AE1844 /* UserCell.m */,
+				E50405A118E6D42A00AE1844 /* UserCell.xib */,
 			);
 			name = Following;
 			sourceTree = "<group>";
@@ -303,7 +331,11 @@
 		E5B9DDCA18E53CCD00C3C34C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E50405B718E6EDD300AE1844 /* User_backgroundImage.png */,
+				E50405B518E6EDBF00AE1844 /* user_backgroundImage_2.png */,
+				E58FC43418E6C12F002AF0E8 /* team_introduction_image.png */,
 				E5B9DDD918E5472F00C3C34C /* tableViewBackground.png */,
+				E556D6D218E66AC500DCCA62 /* backgroundImage.png */,
 				E5B9DDCB18E53D0700C3C34C /* s27232389.jpg */,
 				E5B9DDCC18E53D0700C3C34C /* s27196248.jpg */,
 				E5B9DDCD18E53D0700C3C34C /* s27218475.jpg */,
@@ -313,6 +345,10 @@
 				E5DCBCF818BED6C600B58936 /* 2.png */,
 				E5DCBCF918BED6C600B58936 /* 3.png */,
 				E5DCBCFA18BED6C600B58936 /* 4.png */,
+				E50405A918E6E80100AE1844 /* user_1.png */,
+				E50405AA18E6E80100AE1844 /* user_2.png */,
+				E50405AC18E6E80100AE1844 /* user_3.png */,
+				E50405AB18E6E80100AE1844 /* user_4.png */,
 				E5A84C1A18BCDE43000B5169 /* backgroundView.png */,
 			);
 			name = Images;
@@ -396,20 +432,29 @@
 				E5DCBCFD18BED6C600B58936 /* 4.png in Resources */,
 				E5DCBD0218BEDBA500B58936 /* FollowingViewController.xib in Resources */,
 				E52A212F18BB862600DC6697 /* InfoPlist.strings in Resources */,
+				E58FC43518E6C12F002AF0E8 /* team_introduction_image.png in Resources */,
+				E50405AD18E6E80100AE1844 /* user_1.png in Resources */,
+				E556D6D318E66AC500DCCA62 /* backgroundImage.png in Resources */,
 				E5A84C1B18BCDE43000B5169 /* backgroundView.png in Resources */,
+				E50405B618E6EDBF00AE1844 /* user_backgroundImage_2.png in Resources */,
 				E5DCBCFB18BED6C600B58936 /* 2.png in Resources */,
 				E5B9DDDA18E5472F00C3C34C /* tableViewBackground.png in Resources */,
+				E50405AF18E6E80100AE1844 /* user_4.png in Resources */,
 				E5DCBCFC18BED6C600B58936 /* 3.png in Resources */,
+				E50405A318E6D42A00AE1844 /* UserCell.xib in Resources */,
 				E5B9DDD118E53D0700C3C34C /* s27196248.jpg in Resources */,
 				E5CA5F5C18C309C80057E686 /* AboutViewController.xib in Resources */,
 				E52A213718BB862600DC6697 /* Images.xcassets in Resources */,
 				E5715E7618D5EEA400392AF8 /* AboutUsViewController.xib in Resources */,
+				E50405AE18E6E80100AE1844 /* user_2.png in Resources */,
 				E510A53B18C2EC7600116005 /* SearchBooksDetailController.xib in Resources */,
 				E5B9DDD218E53D0700C3C34C /* s27218475.jpg in Resources */,
 				E5B9DDD318E53D0700C3C34C /* s27210708.jpg in Resources */,
 				E5A84C1D18BCDE99000B5169 /* 1.png in Resources */,
 				E52A215C18BB8E4D00DC6697 /* CustomCell.xib in Resources */,
 				E52A215718BB865200DC6697 /* SearchBooksViewController.xib in Resources */,
+				E50405B018E6E80100AE1844 /* user_3.png in Resources */,
+				E50405B818E6EDD300AE1844 /* User_backgroundImage.png in Resources */,
 				E5B9DDD018E53D0700C3C34C /* s27232389.jpg in Resources */,
 				E5B9DDD818E53F6400C3C34C /* s27222327.jpg in Resources */,
 				E5DCBD0718BEDDBE00B58936 /* MyBooksViewController.xib in Resources */,
@@ -443,6 +488,7 @@
 				E52A213118BB862600DC6697 /* main.m in Sources */,
 				E5DCBD0118BEDBA500B58936 /* FollowingViewController.m in Sources */,
 				E5DCBD0618BEDDBE00B58936 /* MyBooksViewController.m in Sources */,
+				E50405A218E6D42A00AE1844 /* UserCell.m in Sources */,
 				E5715E7518D5EEA400392AF8 /* AboutUsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

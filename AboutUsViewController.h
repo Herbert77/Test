@@ -12,6 +12,8 @@
 
 @property IBOutlet UIBarButtonItem *back;
 
+@property IBOutlet UIImageView *imageView;
+
 -(IBAction)backButtonPressed:(id)sender;
 
 @end
