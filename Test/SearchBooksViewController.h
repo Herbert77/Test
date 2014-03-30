@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class Book;
+
 @interface SearchBooksViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate>
 {
     
     NSArray *namesOfBooks;  // title
-    NSArray *publisher;     // writer
+    NSArray *writers;        // writer
+    NSArray *publishers;     // publisher
     NSArray *namesOfImages; // nameOfCover
     NSArray *introduction;
     NSArray *ISBN;           // ISBN

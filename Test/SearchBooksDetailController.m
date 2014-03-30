@@ -8,6 +8,10 @@
 
 #import "SearchBooksDetailController.h"
 
+#import "LibraryAPI.h"
+
+#import "Book.h"
+
 @interface SearchBooksDetailController ()
 
 @end
@@ -19,7 +23,7 @@
 
 @synthesize  imageView = _imageView, nameOfBook = _nameOfBook, writer = _writer, publisher = _publisher, ISBN_number = _ISBN_number;
 
-@synthesize nameOfBooks_detail = _nameOfBooks_detail, nameOfImages_detail = _nameOfImages_detail;
+@synthesize nameOfBooks_detail = _nameOfBooks_detail, nameOfImages_detail = _nameOfImages_detail, writers_detail = _writers_detail, publishers_detail = _publisher_detail, introduction_detail = _introduction_detail, ISBN_detail = _ISBN_detail;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -56,6 +60,13 @@
     
     _imageView.image = [UIImage imageNamed:[_nameOfImages_detail objectAtIndex:_theRow]];
     
+    _writer.text = [_writers_detail objectAtIndex:_theRow];
+    
+    _publisher.text = [_publisher_detail objectAtIndex:_theRow];
+    
+    _ISBN_number.text = [_ISBN_detail objectAtIndex:_theRow];
+    
+    _textView.text = [_introduction_detail objectAtIndex:_theRow];
     
 }
 
@@ -67,7 +78,23 @@
 
 -(IBAction) sure:(id) sender {
     NSLog(@"sure: ");
+    
+    
+    // 添加一个新书到 我的书 中
+    
+    Book *addedBook = [[Book alloc] initWithTitle:_nameOfBook.text writer:_writer.text publisher:_publisher.text nameOfCover:[_nameOfImages_detail objectAtIndex:_theRow] ISBN:_ISBN_number.text];
+
+      [[LibraryAPI sharedInstance] addBook:addedBook atIndex:0];
+    
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
+
+
+
+
+
+
+
+

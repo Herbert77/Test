@@ -9,6 +9,8 @@
 #import "FollowingViewController.h"
 #import "UserCell.h"
 
+#import "PersonalHomePageController.h"
+
 @interface FollowingViewController () {
     
     NSMutableArray *nameOfUsers;
@@ -38,6 +40,8 @@
     
     nameOfUsers = [[NSMutableArray alloc] initWithObjects:@"夏末的雨",@"再见 明天",@"桃花石上书生",@"山吹茶", nil];
     latestNews = [[NSMutableArray alloc] initWithObjects:@"发表了一条新笔记",@"最近添加了《资治通鉴》",@"赞了《纸牌屋》", @"发表了最新评论", nil];
+    
+    [[self navigationItem] setTitle:[NSString stringWithFormat:@"关注(%i)",[nameOfUsers count]]];
 }
 
 #pragma mark - 
@@ -86,10 +90,23 @@
     
 }
 
+#pragma mark - 
+#pragma mark UITableView delegate
+
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 80;
 }
 
+-(void) tableView:(UITableView *) tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    PersonalHomePageController *personalHomePageController = [[PersonalHomePageController alloc] init];
+    
+    personalHomePageController.theRow = indexPath.row;
+    
+    [[self navigationController] pushViewController:personalHomePageController animated:YES];
+    
+    
+}
 
 @end

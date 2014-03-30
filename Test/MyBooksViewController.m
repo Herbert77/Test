@@ -16,6 +16,8 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+#import "CommentViewController.h"
+
 @interface MyBooksViewController () {
     
     NSArray *allBooks;
@@ -43,7 +45,9 @@
         // 设置这个 栏目按键于导航栏的右方
         [[self navigationItem] setRightBarButtonItem:addBookButtonItem];
         
-//        [[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
+        UIBarButtonItem *refresh = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refresh:)];
+        
+        [[self navigationItem] setLeftBarButtonItem:refresh];
         
     }
     
@@ -69,6 +73,7 @@
     //2
     allBooks = [[LibraryAPI sharedInstance] getBooks];
     
+   
     
 }
 
@@ -165,10 +170,28 @@
     return cell;
 }
 
+#pragma mark -
+#pragma mark UITableView delegate
+
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 100;
 }
 
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    CommentViewController *commentViewController = [[CommentViewController alloc] init];
+    
+    [[self navigationController] pushViewController:commentViewController animated:YES];
+    
+    
+}
+
+
+
+-(void) refresh:(id) sender {
+//     NSLog(@"%i", [allBooks count]);
+    [self.tableView reloadData];
+}
 
 @end

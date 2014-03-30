@@ -38,9 +38,20 @@
 
 @property NSArray *nameOfImages_detail;
 
+@property NSArray *writers_detail;
+
+@property NSArray *publishers_detail;
+
+@property NSArray *introduction_detail;
+
+@property NSArray *ISBN_detail;
+
 -(IBAction) cancel:(id) sender;
 
 -(IBAction) sure:(id)sender;
+
+
+
 
 
 

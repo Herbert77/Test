@@ -11,6 +11,7 @@
 #import "MyBooksViewController.h"
 #import "SearchBooksDetailController.h"
 
+
 @interface SearchBooksViewController ()
 
 @end
@@ -48,8 +49,13 @@
     // 初始化 数据
     namesOfImages = [[NSArray alloc] initWithObjects:@"1.png",@"2.png",@"3.png",@"4.png", nil];
     namesOfBooks = [[NSArray alloc] initWithObjects:@"谋杀似水年华",@"茶花女",@"汤姆叔叔的小屋",@"三个火枪手", nil];
-//        namesOfBooks = [[NSArray alloc] initWithObjects:@"mousha",@"chahuanv",@"tang",@"san", nil];
-    introduction = [NSArray arrayWithObjects:@"作者：蔡骏 讲述了一部围绕南明高中发生的一系列事件。。。",@"作者：" ,@"作者：" ,@"作者：", nil];
+    writers = [[NSArray alloc] initWithObjects:@"蔡骏",@"小仲马",@"斯托夫人",@"大仲马", nil];
+    introduction = [NSArray arrayWithObjects:@"讲述了一部围绕南明高中发生的一系列事件...",
+                    @"《茶花女》为我们塑造了一些生动、鲜明的艺术形象，而其中最突出、最令人难忘的自然是女主人公茶花女玛格丽特。读者们切莫把玛格丽特和阿尔丰西娜·普莱西小姐混为一谈..." ,
+                    @"《汤姆叔叔的小屋》出版至今已有一百五十多年了。该书在1852年首次以单行本出版，立即获得巨大成功，第一周就销售一万册，当年就印行一百多次、三十五万册，这在..." ,
+                    @"故事内容是平民出身的达达尼昂到巴黎投军，加入国王路易十三的火枪手卫队，和其他三个火枪手成为好朋友。他们为了保护王后奥地利的安妮的名誉，抗击红衣主教黎塞留，击败黎塞留设置的重重障碍，前往英国，从白金汉公爵那里取回王后的钻石，挫败了黎塞留挑拨国王和王后的阴谋。", nil];
+    publishers = [[NSArray alloc] initWithObjects:@"南海出版公司",@"外国文学出版社",@"译林出版社",@"上海译文出版社", nil];
+    ISBN = [[NSArray alloc] initWithObjects:@"9787544255080",@"9787501600069",@"9787806578513",@"9787532718214", nil];
     
     // 自定义首行 Cell 和其上导航栏的间距
 //    _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 10)];
@@ -61,6 +67,7 @@
 //    UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 640)];
     
     self.view.backgroundColor = [UIColor colorWithRed:129/255.0 green:163/255.0 blue:182/255.0 alpha:1];
+    
     
 }
 
@@ -162,7 +169,13 @@
     SearchBooksDetailController *myViewDetailViewController = [[SearchBooksDetailController alloc] init];
     
     myViewDetailViewController.theRow = (int)indexPath.row;
+    
     myViewDetailViewController.nameOfImages_detail = namesOfImages;
+    
+    myViewDetailViewController.writers_detail = writers;
+    myViewDetailViewController.publishers_detail = publishers;
+    myViewDetailViewController.introduction_detail = introduction;
+    myViewDetailViewController.ISBN_detail = ISBN;
     
     if ([self.searchDisplayController isActive]) {
 
@@ -184,8 +197,6 @@
         myViewDetailViewController.nameOfBooks_detail = namesOfBooks;
         
     }
-    
-
     
     [[self navigationController] pushViewController:myViewDetailViewController animated:YES];
     
