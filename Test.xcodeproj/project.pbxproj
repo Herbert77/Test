@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D23EDDE218E9929700FE35A6 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23EDDE018E9929700FE35A6 /* NewsViewController.m */; };
+		D23EDDE318E9929700FE35A6 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23EDDE118E9929700FE35A6 /* NewsViewController.xib */; };
 		D263FF2E18E97FED00062609 /* CCRNewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D263FF2618E97FED00062609 /* CCRNewsItem.m */; };
 		D263FF2F18E97FED00062609 /* CCRNewsItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D263FF2818E97FED00062609 /* CCRNewsItemCell.m */; };
 		D263FF3018E97FED00062609 /* CCRNewsItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D263FF2918E97FED00062609 /* CCRNewsItemCell.xib */; };
 		D263FF3118E97FED00062609 /* CCRNewsItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D263FF2B18E97FED00062609 /* CCRNewsItemStore.m */; };
-		D263FF3218E97FED00062609 /* CCRNewsItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D263FF2D18E97FED00062609 /* CCRNewsItemsViewController.m */; };
 		E50405A218E6D42A00AE1844 /* UserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E50405A018E6D42A00AE1844 /* UserCell.m */; };
 		E50405A318E6D42A00AE1844 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E50405A118E6D42A00AE1844 /* UserCell.xib */; };
 		E50405AD18E6E80100AE1844 /* user_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E50405A918E6E80100AE1844 /* user_1.png */; };
@@ -82,6 +83,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D23EDDDF18E9929700FE35A6 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		D23EDDE018E9929700FE35A6 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		D23EDDE118E9929700FE35A6 /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
 		D263FF2518E97FED00062609 /* CCRNewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRNewsItem.h; sourceTree = "<group>"; };
 		D263FF2618E97FED00062609 /* CCRNewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRNewsItem.m; sourceTree = "<group>"; };
 		D263FF2718E97FED00062609 /* CCRNewsItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRNewsItemCell.h; sourceTree = "<group>"; };
@@ -89,8 +93,6 @@
 		D263FF2918E97FED00062609 /* CCRNewsItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCRNewsItemCell.xib; sourceTree = "<group>"; };
 		D263FF2A18E97FED00062609 /* CCRNewsItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRNewsItemStore.h; sourceTree = "<group>"; };
 		D263FF2B18E97FED00062609 /* CCRNewsItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRNewsItemStore.m; sourceTree = "<group>"; };
-		D263FF2C18E97FED00062609 /* CCRNewsItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRNewsItemsViewController.h; sourceTree = "<group>"; };
-		D263FF2D18E97FED00062609 /* CCRNewsItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRNewsItemsViewController.m; sourceTree = "<group>"; };
 		E504059F18E6D42A00AE1844 /* UserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCell.h; sourceTree = "<group>"; };
 		E50405A018E6D42A00AE1844 /* UserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCell.m; sourceTree = "<group>"; };
 		E50405A118E6D42A00AE1844 /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
@@ -193,7 +195,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D263FF2418E97FED00062609 /* NewsViewController */ = {
+		D263FF2418E97FED00062609 /* News */ = {
 			isa = PBXGroup;
 			children = (
 				D263FF2518E97FED00062609 /* CCRNewsItem.h */,
@@ -203,14 +205,15 @@
 				D263FF2918E97FED00062609 /* CCRNewsItemCell.xib */,
 				D263FF2A18E97FED00062609 /* CCRNewsItemStore.h */,
 				D263FF2B18E97FED00062609 /* CCRNewsItemStore.m */,
-				D263FF2C18E97FED00062609 /* CCRNewsItemsViewController.h */,
-				D263FF2D18E97FED00062609 /* CCRNewsItemsViewController.m */,
+				D23EDDDF18E9929700FE35A6 /* NewsViewController.h */,
+				D23EDDE018E9929700FE35A6 /* NewsViewController.m */,
+				D23EDDE118E9929700FE35A6 /* NewsViewController.xib */,
 			);
-			name = NewsViewController;
+			name = News;
 			path = Test/NewsViewController;
 			sourceTree = "<group>";
 		};
-		E5188D0618D552BE00B79284 /* Mybooks */ = {
+		E5188D0618D552BE00B79284 /* MyBooks */ = {
 			isa = PBXGroup;
 			children = (
 				E5DCBD0318BEDDBE00B58936 /* MyBooksViewController.h */,
@@ -229,7 +232,7 @@
 				E5EB77B118E80B7E00B77772 /* CommentViewController.m */,
 				E5EB77B218E80B7E00B77772 /* CommentViewController.xib */,
 			);
-			name = Mybooks;
+			name = MyBooks;
 			sourceTree = "<group>";
 		};
 		E51C7EE218E272DA00CB6C38 /* API */ = {
@@ -247,8 +250,8 @@
 		E51C7EE918E27C1700CB6C38 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D263FF2418E97FED00062609 /* NewsViewController */,
-				E5188D0618D552BE00B79284 /* Mybooks */,
+				D263FF2418E97FED00062609 /* News */,
+				E5188D0618D552BE00B79284 /* MyBooks */,
 				E5715E7018D5E7B600392AF8 /* Following */,
 				E5715E7118D5E7C300392AF8 /* About */,
 			);
@@ -481,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5DCBCFD18BED6C600B58936 /* 4.png in Resources */,
+				D23EDDE318E9929700FE35A6 /* NewsViewController.xib in Resources */,
 				E545BF8018E7AF7B00414C3A /* PersonalHomePageController.xib in Resources */,
 				E5DCBD0218BEDBA500B58936 /* FollowingViewController.xib in Resources */,
 				E52A212F18BB862600DC6697 /* InfoPlist.strings in Resources */,
@@ -537,6 +541,7 @@
 				E5CA5F5B18C309C80057E686 /* AboutViewController.m in Sources */,
 				D263FF2F18E97FED00062609 /* CCRNewsItemCell.m in Sources */,
 				E5EB77B318E80B7E00B77772 /* CommentViewController.m in Sources */,
+				D23EDDE218E9929700FE35A6 /* NewsViewController.m in Sources */,
 				E545BF7F18E7AF7B00414C3A /* PersonalHomePageController.m in Sources */,
 				D263FF3118E97FED00062609 /* CCRNewsItemStore.m in Sources */,
 				E539286C18E1B84200354171 /* Book+TableRepresentation.m in Sources */,
@@ -544,7 +549,6 @@
 				D263FF2E18E97FED00062609 /* CCRNewsItem.m in Sources */,
 				E52A213518BB862600DC6697 /* CCRAppDelegate.m in Sources */,
 				E51C7EE518E2732B00CB6C38 /* LibraryAPI.m in Sources */,
-				D263FF3218E97FED00062609 /* CCRNewsItemsViewController.m in Sources */,
 				E52A215A18BB8E2400DC6697 /* CustomCell.m in Sources */,
 				E52A213118BB862600DC6697 /* main.m in Sources */,
 				E5DCBD0118BEDBA500B58936 /* FollowingViewController.m in Sources */,
