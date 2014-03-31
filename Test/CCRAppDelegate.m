@@ -11,6 +11,8 @@
 #import "SearchBooksViewController.h"  // 添加图书 控制器 头文件
 #import "FollowingViewController.h"  // 添加 关注的人 控制器 头文件
 #import "AboutViewController.h" // 添加 关于 控制器 头文件
+#import "CCRNewsItemsViewController.h" //首页新鲜事
+
 
 @implementation AppDelegate
 @synthesize tabBarController = _tabBarController;
@@ -22,11 +24,17 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    // 创建新鲜事儿页面
+    CCRNewsItemsViewController *newsItemsViewController = [[CCRNewsItemsViewController alloc] init];
+    UINavigationController *navi_news = [[UINavigationController alloc] initWithRootViewController:newsItemsViewController];
+    UITabBarItem *tabBarItem_0 = [[UITabBarItem alloc] initWithTitle:@"动态" image:nil tag:0];
+    navi_news.tabBarItem = tabBarItem_0;
+    
     // 创建 主页 控制器 并设置 为导航控制器 navi_home 的根视图控制器
     MyBooksViewController *myBooksViewController = [[MyBooksViewController alloc] init];
     UINavigationController *navi_home = [[UINavigationController alloc] initWithRootViewController:myBooksViewController];
     // 创建 第一个 tabBar
-    UITabBarItem *tabBarItem_1 = [[UITabBarItem alloc] initWithTitle:@"我的书" image:nil tag:0];
+    UITabBarItem *tabBarItem_1 = [[UITabBarItem alloc] initWithTitle:@"我的书" image:nil tag:1];
     navi_home.tabBarItem = tabBarItem_1;
     
     
@@ -36,17 +44,18 @@
     FollowingViewController *followingViewController = [[FollowingViewController alloc] init];
     UINavigationController *navi_your = [[UINavigationController alloc] initWithRootViewController:followingViewController];
     
-    UITabBarItem *tabBarItem_2 = [[UITabBarItem alloc] initWithTitle:@"关注的人" image:nil tag:1];
+    UITabBarItem *tabBarItem_2 = [[UITabBarItem alloc] initWithTitle:@"关注的人" image:nil tag:2];
     navi_your.tabBarItem = tabBarItem_2;
     
     // 创建  aboutViewController
     AboutViewController *aboutViewController = [[AboutViewController alloc] init];
     UINavigationController *navi_about = [[UINavigationController alloc] initWithRootViewController:aboutViewController];
     
-    UITabBarItem *tabBarItem_3 = [[UITabBarItem alloc] initWithTitle:@"关于" image:nil tag:2];
+    UITabBarItem *tabBarItem_3 = [[UITabBarItem alloc] initWithTitle:@"关于" image:nil tag:3];
     navi_about.tabBarItem = tabBarItem_3;
+
     
-    NSArray *controllers = @[navi_home , navi_your, navi_about];
+    NSArray *controllers = @[navi_news, navi_home , navi_your, navi_about];
     
     _tabBarController = [[UITabBarController alloc] init];
     
