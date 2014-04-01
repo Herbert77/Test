@@ -8,17 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AboutViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+#import <MessageUI/MessageUI.h>
+
+
+
+@interface AboutViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate>
 
 @property IBOutlet UITableView *tableView;
 
-@property (weak, nonatomic) IBOutlet UIButton *AboutUs;
-
-@property (weak, nonatomic) IBOutlet UIButton *Settings;
-
--(IBAction)AboutUsButtonClicked:(id)sender;
-
--(IBAction)SettingsButtonClicked:(id)sender;
+//@property (weak, nonatomic) IBOutlet UIButton *AboutUs;
+//
+//@property (weak, nonatomic) IBOutlet UIButton *Settings;
+//
+//-(IBAction)AboutUsButtonClicked:(id)sender;
+//
+//-(IBAction)SettingsButtonClicked:(id)sender;
 
 
 

@@ -10,6 +10,6 @@
 
 @implementation CCRNewsItemCell
 
-@synthesize Avatar, userName, bookName, pageNum, comSummary;
+@synthesize Avatar = _Avatar, userName = _userName, bookName = _bookName, pageNum = _pageNum, comSummary = _comSummary;
 
 @end

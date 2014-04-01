@@ -81,15 +81,39 @@
     
     CCRNewsItem *p = [[[CCRNewsItemStore sharedStore] allItems] objectAtIndex:[indexPath row]];
     
-//    UINib *nib = [UINib nibWithNibName:@"CCRNewsItemCell" bundle:nil];
-    
-//    [[self tableView] registerNib:nib forCellReuseIdentifier:@"NewsItemCell"];
 
+
+    // 设置 用户头像样式为 圆形
+    [cell.Avatar.layer setCornerRadius:CGRectGetHeight([cell.Avatar bounds])/2];
+    cell.Avatar.layer.masksToBounds = YES;
+    
+    cell.Avatar.layer.borderWidth = 1.8;
+    
+    cell.Avatar.layer.borderColor = [[UIColor colorWithRed:(rand()%255)/255.0 green:(rand()%255)/255.0 blue:(rand()%255)/255.0 alpha:0.4] CGColor];
+    
+    
+    // 设置 用户头像
+    
+    
     [[cell userName] setText:[p userName]];
     [[cell bookName] setText:[p bookName]];
     [[cell comSummary] setText:[p comSummary]];
     
     return cell;
 }
+
+// 设置每个Cell 的高度
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 140;
+}
+
+
+-(void) refreshItem:(id)sender {
+    
+    // TODO:  realize the refreshItem:
+}
+
 
 @end
