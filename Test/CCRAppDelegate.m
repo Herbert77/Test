@@ -11,7 +11,7 @@
 #import "SearchBooksViewController.h"  // 添加图书 控制器 头文件
 #import "FollowingViewController.h"  // 添加 关注的人 控制器 头文件
 #import "AboutViewController.h" // 添加 关于 控制器 头文件
-#import "CCRNewsItemsViewController.h" //首页新鲜事
+#import "NewsViewController.h" //首页新鲜事
 
 
 @implementation AppDelegate
@@ -25,8 +25,8 @@
     [self.window makeKeyAndVisible];
     
     // 创建新鲜事儿页面
-    CCRNewsItemsViewController *newsItemsViewController = [[CCRNewsItemsViewController alloc] init];
-    UINavigationController *navi_news = [[UINavigationController alloc] initWithRootViewController:newsItemsViewController];
+    NewsViewController *newsViewController = [[NewsViewController alloc] init];
+    UINavigationController *navi_news = [[UINavigationController alloc] initWithRootViewController:newsViewController];
     UITabBarItem *tabBarItem_0 = [[UITabBarItem alloc] initWithTitle:@"动态" image:nil tag:0];
     navi_news.tabBarItem = tabBarItem_0;
     
