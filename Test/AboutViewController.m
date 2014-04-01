@@ -51,25 +51,6 @@
         AboutUsViewController *aboutUsViewController = [[AboutUsViewController alloc] init];
         [self presentViewController:aboutUsViewController animated:YES completion:nil];
     }
-    if (indexPath.row==1 && indexPath.section==1) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.new-thread.com"]];
-
-    }
-    
-    if (indexPath.row==2 && indexPath.section==1) {
-        MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
-        [mc.navigationBar setTintColor:[UIColor darkGrayColor]];
-        mc.mailComposeDelegate = self;
-        
-        [mc setSubject:@"关于达令街"];
-        [mc setToRecipients:[NSArray arrayWithObject:@"595325923@qq.com"]];
-        
-        [mc setMessageBody:@"我想说：" isHTML:NO];
-        
-        [self presentViewController:mc animated:YES completion:nil];
-    }
-
-    
 }
 
 -(NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -97,7 +78,7 @@
     if (section == 0) {
         return 3;
     } else {
-        return 3;
+        return 2;
     }
 }
 
@@ -123,10 +104,8 @@
             break;
         case 1:
             if (indexPath.row == 0) {
-                cell.textLabel.text = @"团队简介";
-            } else if (indexPath.row == 1){
-                cell.textLabel.text = @"团队链接";
-            }else {
+                cell.textLabel.text = @"开发团队";
+            } else {
                 cell.textLabel.text = @"意见反馈";
             }
             break;
@@ -140,46 +119,21 @@
     
 }
 
-#pragma mark -
-#pragma mark mail delegate
 
--(void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+
+
+-(IBAction)AboutUsButtonClicked:(id)sender {
     
-    switch (result) {
-        case MFMailComposeResultCancelled:
-            NSLog(@"Mail cancelled");
-            break;
-        case MFMailComposeResultSaved:
-            NSLog(@"Mail saved");
-            break;
-        case MFMailComposeResultSent:
-            NSLog(@"Mail sent");
-            break;
-        case MFMailComposeResultFailed:
-            NSLog(@"Mail sent failure: %@", [error localizedDescription]);
-            break;
-        default:
-            break;
-    }
-    // close the mail interface
-    [self dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"AboutUs is clicked");
+    AboutUsViewController *aboutUsViewController = [[AboutUsViewController alloc] init];
+    
+    [self presentViewController:aboutUsViewController animated:YES completion:nil];
     
 }
 
-
-
-//-(IBAction)AboutUsButtonClicked:(id)sender {
-//    
-//    NSLog(@"AboutUs is clicked");
-//    AboutUsViewController *aboutUsViewController = [[AboutUsViewController alloc] init];
-//    
-//    [self presentViewController:aboutUsViewController animated:YES completion:nil];
-//    
-//}
-//
-//-(IBAction)SettingsButtonClicked:(id)sender {
-//    
-//    NSLog(@"Settings is clicked");
-//}
+-(IBAction)SettingsButtonClicked:(id)sender {
+    
+    NSLog(@"Settings is clicked");
+}
 
 @end
