@@ -66,6 +66,7 @@
 		E5DCBD0218BEDBA500B58936 /* FollowingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5DCBD0018BEDBA500B58936 /* FollowingViewController.xib */; };
 		E5DCBD0618BEDDBE00B58936 /* MyBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DCBD0418BEDDBE00B58936 /* MyBooksViewController.m */; };
 		E5DCBD0718BEDDBE00B58936 /* MyBooksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5DCBD0518BEDDBE00B58936 /* MyBooksViewController.xib */; };
+		E5E05FA218EAF2300047A5EC /* CCRNewsItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5E05FA118EAF2300047A5EC /* CCRNewsItemCell.xib */; };
 		E5EB77B318E80B7E00B77772 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EB77B118E80B7E00B77772 /* CommentViewController.m */; };
 		E5EB77B418E80B7E00B77772 /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5EB77B218E80B7E00B77772 /* CommentViewController.xib */; };
 		E5EB77B618E80DAA00B77772 /* comment_backgoundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EB77B518E80DAA00B77772 /* comment_backgoundImage.png */; };
@@ -162,6 +163,7 @@
 		E5DCBD0318BEDDBE00B58936 /* MyBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyBooksViewController.h; path = Test/MyBooksViewController.h; sourceTree = "<group>"; };
 		E5DCBD0418BEDDBE00B58936 /* MyBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyBooksViewController.m; path = Test/MyBooksViewController.m; sourceTree = "<group>"; };
 		E5DCBD0518BEDDBE00B58936 /* MyBooksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyBooksViewController.xib; path = Test/MyBooksViewController.xib; sourceTree = "<group>"; };
+		E5E05FA118EAF2300047A5EC /* CCRNewsItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCRNewsItemCell.xib; sourceTree = "<group>"; };
 		E5EB77B018E80B7E00B77772 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
 		E5EB77B118E80B7E00B77772 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
 		E5EB77B218E80B7E00B77772 /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				D263FF2618E97FED00062609 /* CCRNewsItem.m */,
 				D263FF2718E97FED00062609 /* CCRNewsItemCell.h */,
 				D263FF2818E97FED00062609 /* CCRNewsItemCell.m */,
+				E5E05FA118EAF2300047A5EC /* CCRNewsItemCell.xib */,
 				D263FF2A18E97FED00062609 /* CCRNewsItemStore.h */,
 				D263FF2B18E97FED00062609 /* CCRNewsItemStore.m */,
 				D23EDDDF18E9929700FE35A6 /* NewsViewController.h */,
@@ -488,6 +491,7 @@
 				E58FC43518E6C12F002AF0E8 /* team_introduction_image.png in Resources */,
 				E50405AD18E6E80100AE1844 /* user_1.png in Resources */,
 				E556D6D318E66AC500DCCA62 /* backgroundImage.png in Resources */,
+				E5E05FA218EAF2300047A5EC /* CCRNewsItemCell.xib in Resources */,
 				E5A84C1B18BCDE43000B5169 /* backgroundView.png in Resources */,
 				E50405B618E6EDBF00AE1844 /* user_backgroundImage_2.png in Resources */,
 				E5EB77B418E80B7E00B77772 /* CommentViewController.xib in Resources */,
