@@ -67,6 +67,13 @@
 		E5DCBD0618BEDDBE00B58936 /* MyBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DCBD0418BEDDBE00B58936 /* MyBooksViewController.m */; };
 		E5DCBD0718BEDDBE00B58936 /* MyBooksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5DCBD0518BEDDBE00B58936 /* MyBooksViewController.xib */; };
 		E5E05FA218EAF2300047A5EC /* CCRNewsItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5E05FA118EAF2300047A5EC /* CCRNewsItemCell.xib */; };
+		E5E97C101907A989006177F6 /* libDoubanApiEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E97C0E1907A657006177F6 /* libDoubanApiEngine.framework */; };
+		E5E97C121907AA2C006177F6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E97C111907AA2C006177F6 /* libxml2.dylib */; };
+		E5E97C141907AA36006177F6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E97C131907AA36006177F6 /* libz.dylib */; };
+		E5E97C161907AA48006177F6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E97C151907AA48006177F6 /* CFNetwork.framework */; };
+		E5E97C181907AA52006177F6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E97C171907AA52006177F6 /* Security.framework */; };
+		E5E97C1A1907AA5E006177F6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E97C191907AA5E006177F6 /* SystemConfiguration.framework */; };
+		E5E97C1C1907AA6D006177F6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E97C1B1907AA6D006177F6 /* MobileCoreServices.framework */; };
 		E5EB77B318E80B7E00B77772 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EB77B118E80B7E00B77772 /* CommentViewController.m */; };
 		E5EB77B418E80B7E00B77772 /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5EB77B218E80B7E00B77772 /* CommentViewController.xib */; };
 		E5EB77B618E80DAA00B77772 /* comment_backgoundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EB77B518E80DAA00B77772 /* comment_backgoundImage.png */; };
@@ -164,6 +171,13 @@
 		E5DCBD0418BEDDBE00B58936 /* MyBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyBooksViewController.m; path = Test/MyBooksViewController.m; sourceTree = "<group>"; };
 		E5DCBD0518BEDDBE00B58936 /* MyBooksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyBooksViewController.xib; path = Test/MyBooksViewController.xib; sourceTree = "<group>"; };
 		E5E05FA118EAF2300047A5EC /* CCRNewsItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCRNewsItemCell.xib; sourceTree = "<group>"; };
+		E5E97C0E1907A657006177F6 /* libDoubanApiEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libDoubanApiEngine.framework; path = "../../../Downloads/douban-objc-client-master/libDoubanApiEngine.framework"; sourceTree = "<group>"; };
+		E5E97C111907AA2C006177F6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		E5E97C131907AA36006177F6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E5E97C151907AA48006177F6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E5E97C171907AA52006177F6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E5E97C191907AA5E006177F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E5E97C1B1907AA6D006177F6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		E5EB77B018E80B7E00B77772 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
 		E5EB77B118E80B7E00B77772 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
 		E5EB77B218E80B7E00B77772 /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
@@ -175,10 +189,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E556D6D518E66D5B00DCCA62 /* QuartzCore.framework in Frameworks */,
-				E52A212718BB862600DC6697 /* CoreGraphics.framework in Frameworks */,
-				E52A212918BB862600DC6697 /* UIKit.framework in Frameworks */,
 				E52A212518BB862600DC6697 /* Foundation.framework in Frameworks */,
+				E52A212918BB862600DC6697 /* UIKit.framework in Frameworks */,
+				E5E97C1C1907AA6D006177F6 /* MobileCoreServices.framework in Frameworks */,
+				E5E97C1A1907AA5E006177F6 /* SystemConfiguration.framework in Frameworks */,
+				E5E97C181907AA52006177F6 /* Security.framework in Frameworks */,
+				E5E97C161907AA48006177F6 /* CFNetwork.framework in Frameworks */,
+				E52A212718BB862600DC6697 /* CoreGraphics.framework in Frameworks */,
+				E5E97C141907AA36006177F6 /* libz.dylib in Frameworks */,
+				E5E97C121907AA2C006177F6 /* libxml2.dylib in Frameworks */,
+				E5E97C101907A989006177F6 /* libDoubanApiEngine.framework in Frameworks */,
+				E556D6D518E66D5B00DCCA62 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +312,13 @@
 		E52A212318BB862600DC6697 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5E97C1B1907AA6D006177F6 /* MobileCoreServices.framework */,
+				E5E97C191907AA5E006177F6 /* SystemConfiguration.framework */,
+				E5E97C171907AA52006177F6 /* Security.framework */,
+				E5E97C151907AA48006177F6 /* CFNetwork.framework */,
+				E5E97C131907AA36006177F6 /* libz.dylib */,
+				E5E97C111907AA2C006177F6 /* libxml2.dylib */,
+				E5E97C0E1907A657006177F6 /* libDoubanApiEngine.framework */,
 				E556D6D418E66D5B00DCCA62 /* QuartzCore.framework */,
 				E52A212418BB862600DC6697 /* Foundation.framework */,
 				E52A212618BB862600DC6697 /* CoreGraphics.framework */,
@@ -669,12 +697,22 @@
 		E52A214E18BB862700DC6697 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Herbert/Downloads/douban-objc-client-master",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
 				INFOPLIST_FILE = "Test/Test-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -682,12 +720,22 @@
 		E52A214F18BB862700DC6697 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Herbert/Downloads/douban-objc-client-master",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
 				INFOPLIST_FILE = "Test/Test-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
