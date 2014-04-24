@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <libDoubanAPIEngine/DOUService.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, DOUHttpRequestDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

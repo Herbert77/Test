@@ -83,11 +83,6 @@
     return cell;
 }
 
-- (void)refreshItem:(id) sender
-{
-    // TODO: refreshItem:
-}
-
 
 - (void)didReceiveMemoryWarning
 {
